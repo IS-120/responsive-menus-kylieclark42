@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kylie's Cookbook</title>
+  <meta name="description" content="A personalized cookbook of all my favorite recipes.">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="manifest" href="./images/site.webmanifest">
+  <link rel="shortcut icon" href="./images/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./images/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lora&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about/index.html">About</a></li>
+        <li><a href="contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero">
+    <picture>
+      <source media="(min-width: 769px)" srcset="images/hero-laptop-1920w.png">
+      <source media="(min-width: 381px)" srcset="images/hero-tablet-768w.png">
+      <source media="(max-width: 380px)" srcset="images/hero-mobile-380w.png">
+      <img src="images/hero-tablet-768w.png" alt="Nice layout of food on a cutting board.">
+    </picture>
+    <div class="hero_overlay">
+      <h1> Kylie's Cookbook</h1>
+      <p>Begin your cooking adventure.</p>
+    </div>
+  </div>
+  <main>
+    <article class="panel">
+      <div class="left text-wrapper">
+        <h2>Welcome to My Cookbook</h2>
+        <p>
+          <strong>Hi, my name is Kylie Clark.</strong>
+          During my time at college, I developed a love of cooking with
+          my best friend. Together we discovered some delicious recipes. These recipes were scattered
+          around in numerous places and I struggled to remember exactly where to find that perfect recipes
+          that I had already tried and loved. So, I decided to put together this online cookbook as a way
+          organize my delicious findings and keep track of my precious recipes.
+        </p>
+        <a href="#" class="button">See More</a>
+      </div>
+      <div class="image-wrapper">
+        <img src="images/kylieclark-560px.jpg" alt="Picture of Kylie Clark" height="560px" width="560px">
+      </div>
+    </article>
+    <article class="panel">
+      <div class="left">
+        <h2>Here's How the Cookbook Works</h2>
+        <p>Click the button that says
+          <em>"My Cookbook"</em>
+          and then choose which type of meal you are looking for. Then choose what looks
+          the most appealing to you and cook it! Then enjoy the deliciousness.
+        </p>
+        <a href="#" class="button">My Cookbook</a>
+      </div>
+      <div class="image-wrapper">
+        <img src="images/cookbook-560px.jpg" alt="Cookbook on counter." height="560px" width="560px">
+      </div>
+    </article>
+  </main>
+  <h2 class="special">Featured Meals of the Week</h2>
+  <section class="cards">
+    <a class="card" href="">
+      <img src="images/hamburger_480.jpg" height="480px" width="480px" loading="lazy" alt="Hamburger" />
+      <p>Cheese Burger</p>
+    </a>
+    <a class="card" href="">
+      <img src="images/curry_480.jpg" height="480px" width="480px" loading="lazy" alt="Coconut Chicken Curry" />
+      <p>Coconut Chicken Curry</p>
+    </a>
+    <a class="card" href="">
+      <img src="images/tacos_480.jpg" height="480px" width="480px" loading="lazy" alt="Tacos" />
+      <p>Tacos</p>
+    </a>
+    <a class="card" href="">
+      <img src="images/pizza_480.jpg" height="480px" width="480px" loading="lazy" alt="Pizza" />
+      <p>Pizza</p>
+    </a>
+  </section>
+  <aside class="container">
+    <p>My Cookbook button can go here in the aside.</p>
+  </aside>
+  <footer class="container">
+    <p>Thank you for visiting my cookbook!</p>
+
+  </footer>
+</body>
+
+</html>

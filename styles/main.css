@@ -1,0 +1,282 @@
+:root {
+  --white: #f6f6f6;
+  --wool: #e8e8e8;
+  --grey: #333;
+  --red: #B30406;
+  --dark-red: #980200;
+  --header: #111
+  background-color: #f6f6f6;
+  font-family: "DM Sans", sans-serif;
+  color: var(--grey);
+}
+/* ------ MAIN STUFF -------- */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: "DM Sans", sans-serif;
+  color: var(--grey);
+}
+
+header {
+  background-color: var(--dark-red);
+  color: var(--white);
+  display: flex;
+  justify-content: flex-end;
+  align-self: stretch;
+}
+
+nav {
+  margin: 0;
+  padding: 15px;
+}
+
+nav a {
+  padding: 0px 20px;
+  font-size: large;
+  display: inline-block;
+}
+
+nav a[href]:hover {
+  text-decoration-line: underline;
+  color: var(--wool);
+  font-weight: lighter;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+/*------ HERO SETUP ------*/
+.hero {
+  position: relative;
+  color: var(--white);
+  margin-bottom: 6rem;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+ }
+
+ .hero > h1 {
+  font-size: clamp(1rem, 4vw, 3.25rem);
+ }
+
+.hero_overlay {
+  position: absolute;
+  align-self: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-shadow: 2px 3px #333;
+  font-size: clamp(1rem, 4vw, 3.25rem);
+}
+
+main {
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+article {
+  margin-bottom: 4rem;
+  max-width: 70rem;
+  display: flex;
+}
+
+
+
+/* ------------------------------------------ */
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a[href]:hover {
+  font-weight: bold;
+  color: var(--wool);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  line-height: 1.1;
+  color: var(--header);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+picture img {
+  max-width: none;
+  height: 100%;
+}
+
+.panel {
+  display: flex;
+  background-color: #e8e8e8;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.text-wrapper {
+  order: 1;
+  }
+
+
+* {
+  box-sizing: border-box;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+  height: 275px;
+  margin: 0 1rem 6rem;
+  flex-direction: column;
+  background-color: #e8e8e8;
+  padding: 2rem;
+}
+
+.card {
+  margin: 0px;
+  padding: 0px;
+  flex: 1 1 0;
+  color: #f6f6f6;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #333;
+  background-color: #333;
+ display:block;
+}
+
+.card:hover {
+  color: var(--wool);
+  box-shadow: 3px 3px 4px rgba(51, 51, 51, 0.6);
+  transition: box-shadow 100ms ease;
+}
+
+.card p {
+  transform: scale(.9);
+  font-size: 18px;
+  transition: transform 300ms;
+  line-height: 1;
+}
+
+section.cards {
+  height: fit-content;
+  margin: 0 1rem 6rem;
+}
+
+.special {
+margin: 0 1rem 6rem;
+}
+
+.card:hover p {
+  transform: scale(1);
+}
+
+.container {
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0.8rem 1rem;
+  border-radius: 1000px;
+  transition: background-color 300ms ease;
+  background-color: var(--dark-red);
+}
+
+.button:hover {
+  background-color: var(--red);
+  cursor: pointer;
+}
+
+.text-content .button {
+  margin-top: 2rem;
+}
+
+
+/* ------------------------------------------ */
+
+svg {
+  width: 200px;
+}
+
+/* temp fix to size about img */
+img[srcset] {
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+/* temporary fix to size svg images */
+img[src$="svg"] {
+  width: 200px;
+}
+
+nav ul {
+  margin: 0;
+}
+
+/* ------------------------------------------ */
+
+
+@media (min-width: 401px) {
+  /* tablet CSS */
+.panel {
+   flex-direction: row;
+   gap: 50px;
+ }
+.text-wrapper {
+  order: 0;
+  flex: .6
+}
+.image-wrapper {
+flex: .4;
+}
+h2{
+  margin: 0;
+}
+.left {
+  order: 1;
+  flex: .6
+}
+
+.cards {
+  display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;  
+}
+
+.cards > * {
+  flex: 1 1 33%;
+}
+}
+
+
+@media (min-width: 801px) {
+  /* desktop CSS */
+  .cards {
+    flex-direction: row; 
+    flex-wrap: nowrap;
+  }
+  .cards > * {
+    flex: 1 1 0;}
+  }
