@@ -228,7 +228,7 @@ picture img {
   color: #f6f6f6;
   font-weight: bold;
   text-align: center;
-  border: 1px solid #333;
+  border: 1px solid var(--grey);
   background-color: var(--grey);
  display:block;
 }
