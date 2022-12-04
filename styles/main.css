@@ -346,7 +346,7 @@ h2{
 /*-------Navigation-----*/
 header {
   background-color: var(--dark-red);
-  color: var(--white);
+  color: var(aqua);
   display: flex;
   justify-content: flex-end;
   align-self: stretch;
