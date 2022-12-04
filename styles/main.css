@@ -268,7 +268,7 @@ margin: 0 1rem 3rem;
 
 .button {
   display: inline-block;
-  color: var(--white);
+  color: aqua;
   font-size: 14px;
   font-weight: bold;
   padding: 0.8rem 1rem;
@@ -346,7 +346,7 @@ h2{
 /*-------Navigation-----*/
 header {
   background-color: var(--dark-red);
-  color: var(aqua);
+  color: var(--white);
   display: flex;
   justify-content: flex-end;
   align-self: stretch;
@@ -365,7 +365,7 @@ header ul {
 
 .hero {  
   margin-bottom: 3rem;
-  height: 90vh;
+  height: vh;
 }  
 
 nav {
