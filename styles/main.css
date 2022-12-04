@@ -225,7 +225,7 @@ picture img {
   margin: 0px;
   padding: 0px;
   flex: 1 1 0;
-  color: #f6f6f6;
+  color: var(--white);
   font-weight: bold;
   text-align: center;
   border: 1px solid var(--grey);
