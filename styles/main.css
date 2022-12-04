@@ -26,6 +26,12 @@ body {
 
 
 /* ------ MENU ICON -------- */
+header ul {
+  position: absolute;
+  opacity: 0;
+  transform: translateX(-100vw);
+  transition: transform 300ms ease;
+}
 
 .menu-icon {
   position: fixed;
@@ -72,6 +78,11 @@ body {
 
 .close line:last-child {
   transform: rotate(-135deg);
+}
+
+.close ul {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* ------ MENU ICON CLOSE-------- */
