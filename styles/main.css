@@ -268,7 +268,7 @@ margin: 0 1rem 3rem;
 
 .button {
   display: inline-block;
-  color: aqua;
+  color: var(--white);
   font-size: 14px;
   font-weight: bold;
   padding: 0.8rem 1rem;
@@ -365,7 +365,8 @@ header ul {
 
 .hero {  
   margin-bottom: 3rem;
-  height: vh;
+  height: 90vh;
+  width: auto;
 }  
 
 nav {
