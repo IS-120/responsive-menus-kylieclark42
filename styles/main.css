@@ -352,15 +352,21 @@ header {
   align-self: stretch;
 }
 
+header ul {
+  position: static;
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
 
 .menu-icon {
   display: none;
 }
 
-/* .hero {  
+.hero {  
   margin-bottom: 3rem;
-  height: 100vh;
-}  */
+  height: 90vh;
+}  
 
 nav {
   display: contents;
