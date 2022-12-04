@@ -1,5 +1,8 @@
 <!-- cSpell:enable  -->
 
+A website with all my favorite recipes
+
+
 # Responsive menu
 
 **Objectives**: Add a dropdown menu for mobile devices.
