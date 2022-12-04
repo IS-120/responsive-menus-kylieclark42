@@ -229,7 +229,7 @@ picture img {
   font-weight: bold;
   text-align: center;
   border: 1px solid #333;
-  background-color: #333;
+  background-color: var(--grey);
  display:block;
 }
 
