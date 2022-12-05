@@ -128,14 +128,11 @@ nav li a:hover {
   align-self: stretch;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
  }
 
  /* this will center then crop the image to fit the hero container */
-.hero img {
-  height: 100%;
-  object-fit: cover;
-}
+/* f */
 
 .hero h1 {
   font-size: clamp(1rem, 7vw, 7rem);
@@ -356,7 +353,7 @@ h2{
 
 /*-------Navigation-----*/
 header {
-  background-color: aqua;
+  background-color: var(--dark-red);
   color: var(--white);
   display: flex;
   justify-content: flex-end;
@@ -374,16 +371,16 @@ header ul {
   display: none;
 }
 
-.hero {  
+/* .hero {  
   margin: 0;
   padding: 0;
   margin-bottom: 3rem;
  
-}  
-
+}   */
+/* 
 .hero img {
   height: 100%;
-}
+} */
 
 nav {
   display: contents;
