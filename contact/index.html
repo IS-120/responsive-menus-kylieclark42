@@ -46,6 +46,13 @@
   </header>
   <h1>Contact</h1>
   <img src="../images/email-logo.svg" alt="Email icon.">
+  <script>
+    const header = document.querySelector("header");
+
+    document.querySelector(".menu-icon").addEventListener("click", () => {
+      header.classList.toggle("close");
+    });
+  </script>
 </body>
 
 </html>
