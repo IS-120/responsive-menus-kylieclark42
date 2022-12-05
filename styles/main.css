@@ -356,7 +356,7 @@ h2{
 
 /*-------Navigation-----*/
 header {
-  background-color: var(--dark-red);
+  background-color: aqua;
   color: var(--white);
   display: flex;
   justify-content: flex-end;
@@ -383,7 +383,6 @@ header ul {
 
 .hero img {
   height: 100%;
-  object-fit: fill;
 }
 
 nav {
